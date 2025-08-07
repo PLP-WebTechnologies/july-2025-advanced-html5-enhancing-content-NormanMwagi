@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Content & HTML5 Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Company Web Services</h1>
+        <p>Showcasing lists, tables, media, and a robust HTML5 form</p>
+    </header>
+
+    <main>
+        <!-- Section: Lists -->
+        <section>
+            <h2>Our Key Services</h2>
+            <ul>
+                <li>Custom Website Design</li>
+                <li>Responsive Development</li>
+                <li>SEO & Performance Optimization</li>
+                <li>E-commerce Solutions</li>
+            </ul>
+            <ol>
+                <li>Consultation</li>
+                <li>Design & Prototype</li>
+                <li>Development</li>
+                <li>Testing & Launch</li>
+            </ol>
+        </section>
+
+        <!-- Section: Table -->
+        <section>
+            <h2>Pricing Plans</h2>
+            <table>
+                <caption>Service Packages</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Plan</th>
+                        <th scope="col">Features</th>
+                        <th scope="col">Price (USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Starter</td>
+                        <td>Basic site, 5 pages, email support</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Business</td>
+                        <td>Up to 10 pages, SEO, analytics</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>Enterprise</td>
+                        <td>Unlimited pages, e-commerce, 24/7 support</td>
+                        <td>2500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section: Media -->
+        <section>
+            <h2>Our Work in Action</h2>
+            <figure>
+                <img src="https://via.placeholder.com/600x300" alt="Sample Website Mockup" width="600" height="300" />
+                <figcaption>Mockup of a recent responsive design project</figcaption>
+            </figure>
+            <figure>
+                <video controls width="600">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Client testimonial video</figcaption>
+            </figure>
+        </section>
+
+        <!-- Section: Contact Form -->
+        <section>
+            <h2>Get in Touch</h2>
+            <form action="#" method="post">
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="e.g., Jane Doe" required minlength="3"
+                        autocomplete="name" />
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required
+                        autocomplete="email" />
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="\+\d{12}" required />
+                </fieldset>
+
+                <!-- Project Details -->
+                <fieldset>
+                    <legend>Project Details</legend>
+
+                    <label for="service">Select Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="">-- Choose an option --</option>
+                        <option value="design">Custom Design</option>
+                        <option value="development">Development</option>
+                        <option value="seo">SEO & Optimization</option>
+                        <option value="ecommerce">E-commerce</option>
+                    </select>
+
+                    <label for="budget">Estimated Budget (USD):</label>
+                    <input type="number" id="budget" name="budget" min="100" max="10000" step="50" required />
+
+                    <label for="deadline">Desired Deadline:</label>
+                    <input type="date" id="deadline" name="deadline" required />
+                </fieldset>
+
+                <!-- Preferences -->
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <p>Preferred Contact Method:</p>
+                    <label><input type="radio" name="contact_method" value="email" checked /> Email</label>
+                    <label><input type="radio" name="contact_method" value="phone" /> Phone</label>
+
+                    <p>Subscribe to Newsletter:</p>
+                    <label><input type="checkbox" name="subscribe" /> Yes, sign me up!</label>
+                </fieldset>
+
+                <!-- Additional Comments -->
+                <fieldset>
+                    <legend>Additional Comments</legend>
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Tell us more about your project..."
+                        maxlength="500"></textarea>
+                </fieldset>
+
+                <!-- Readonly & Hidden Inputs -->
+                <input type="hidden" name="referrer" value="facebook-page" />
+                <label for="refcode">Referral Code:</label>
+                <input type="text" id="refcode" name="refcode" value="WEB2025" readonly />
+
+                <!-- Submit -->
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Norman Mwagi Web Solutions</p>
+    </footer>
+</body>
+
+</html>
